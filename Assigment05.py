@@ -54,10 +54,9 @@ while (True):
     elif (strChoice.strip() == '2'):
         task = str(input("Enter a Task: "))
         priority = str(input("Enter a priority: "))
-        #dicRow = {task:priority}
-        dicRow = {"Task": task.strip(), "Priority": priority.strip()}
-        lstTable.append(dicRow)
-        print(dicRow)
+        NewRow = {"Task": task.strip(), "Priority": priority.strip()}
+        lstTable.append(NewRow)
+        print(lstTable)
         continue
     #Remove a new item from the list/Table
     elif (strChoice.strip() == '3'):
