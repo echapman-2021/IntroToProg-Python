@@ -58,13 +58,12 @@ while (True):
         lstTable.append(NewRow)
         for i in lstTable:
             print(i["Task"] + "," +i["Priority"])
-
         continue
     #Remove a new item from the list/Table
     elif (strChoice.strip() == '3'):
         print("Current Data is...")
         for i in lstTable:
-            print(i["Task"] + "," + i["Priority"])
+            print(i["Task"])  #took out priority experiment
         task_to_remove = input("Select a task to remove...Be Specific: ")
         for dicRow in lstTable:
             if task_to_remove.lower() == dicRow["Task"].lower():
