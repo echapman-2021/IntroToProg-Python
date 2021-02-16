@@ -56,7 +56,9 @@ while (True):
         priority = str(input("Enter a priority: "))
         NewRow = {"Task": task.strip(), "Priority": priority.strip()}
         lstTable.append(NewRow)
-        print(lstTable)
+        for i in lstTable:
+            print(i["Task"] + "," +i["Priority"])
+
         continue
     #Remove a new item from the list/Table
     elif (strChoice.strip() == '3'):
